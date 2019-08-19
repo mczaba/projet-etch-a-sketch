@@ -29,7 +29,7 @@ function createGrid(number){
     }
     boxes = document.querySelectorAll(".box");
     boxes.forEach((div) => {
-        div.addEventListener("mouseover", () => {
+        div.addEventListener("mouseenter", () => {
             div.classList.add("blackbox");
             div.classList.remove("box");
         })
@@ -41,11 +41,11 @@ chooseRes.addEventListener("click", () =>{
     createGrid(pixels);
 })
 
-boxes.forEach((div) => {
-    div.addEventListener("mouseover", () => {
+/*boxes.forEach((div) => {
+    div.addEventListener("mouseenter", () => {
         div.classList.add("blackbox");
         div.classList.remove("box");
     })
 })
-
+*/
 
