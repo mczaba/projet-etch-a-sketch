@@ -6,8 +6,7 @@ const chooseRes = document.querySelector("#chooseResolution");
 createGrid(16);
 clear.addEventListener("click", () => {
     boxes.forEach((div) => {
-        div.classList.remove("blackbox");
-        div.classList.add("box");
+        div.style.backgroundColor = "white";
     })
 })
 
@@ -30,8 +29,10 @@ function createGrid(number){
     boxes = document.querySelectorAll(".box");
     boxes.forEach((div) => {
         div.addEventListener("mouseenter", () => {
-            div.classList.add("blackbox");
-            div.classList.remove("box");
+            let red = Math.floor((Math.random() * 255));
+            let green = Math.floor((Math.random() * 255));
+            let blue = Math.floor((Math.random() * 255));
+            div.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
         })
     })
 }
