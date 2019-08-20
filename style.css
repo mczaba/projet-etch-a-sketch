@@ -21,9 +21,3 @@ body{
     grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
     border : 2px black solid;
 }
-
-
-
-.blackbox {
-    background-color: black;
-}
